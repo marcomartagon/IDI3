@@ -66,7 +66,7 @@ It was divided into 6 parts
             
    
    
-   Ref:
+   Ref:\n
    
    [1]Geron, A."Hands-On Machine Learning with Scikit-Learn & TensorFlow",O'REALLY, 2017 USA
    [2]EXIF,"Exchangeable Image File Format", online : https://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/EXIF.html
