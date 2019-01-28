@@ -9,9 +9,10 @@ Keywords
     sklearn, KNeighborsClassifier, neuronal network, PIL, img, crop, python, numpy, jupyter
 
 Abtract
-FLIR Thermal cameras create a simple thermal PICS with few EXIF data.
+Thermal images are a good tool to monitoring and analize thermal behavior and charateristics in crops, we can detect some overheating and thermal affectation in crops, in my case the greenhouses is a physical barrier to thermal isolation. We can analise the thermal barrier provided by the platic roft and porvide betther feedback to add or redice the filters contained in this platic, just to maintain a better levels of heat into the green house according with the crop.
+FLIR Thermal cameras create a simple thermal PICS with few EXIF data, FLIR cameres uses 15 degrees vision lents, and rainbow thermal scale.
 We need insert on the commants EXIF tag extra information as Max and Min Temp, GPS location as latitude, longitude, angle.
-Use of sklearn library to train the model with some traing pictures that contain the digits to obtain the predicted label 0,1,2,3,4,5,6,7,8,9,-,. that represent the characters, this will ensure high acuracy to extract the temperature digits from the image, instead of use a generic OCR software.
+Use of sklearn library to training the model with some pictures that contain the digits to obtain the predicted label 0,1,2,3,4,5,6,7,8,9,-,. that represent the characters, this will ensure high acuracy to extract the temperature digits from the image, instead of use a generic OCR software.
 
 Note : 
   Python code not obtimised, this process was designed  to teach the entire pricess from collec the pictures, group, use the right model and train the model  on class room.
@@ -26,21 +27,24 @@ It was divided into 6 parts
 3) Load each traing image  and ensure keep the right label-class 
    Convert from 2D array to 1D array
    Choose sklearn.neighbors.KNeighborsClassifier(n_neighbors=3) and sklearn.neighbors.KNeighborsRegressor(n_neighbors=3
-   Compare which is better obtaing the accuracy  ( just to School Example )
+   Compare which is better model, obtaing the accuracy  ( just to School Example )
    Save the best model, in this case: sklearn.neighbors.KNeighborsClassifier
 4) Load the model sklearn.neighbors.KNeighborsClassifier
    Load a new FLIR thermal image, this should use Raimbow thermal scale
    Predict the labels
-   Compare the lables
+   Compare the labels
    Generate a file with the labels, using the same file name of picture but whith extension .LBL, the fle contain 
     MAT:XXX.XX,MIT:-/+XXX,LA:-/+XXXX.XX,LO:-/+XXXX.XX,AG:+/-XXX.XX
     explanation : 
     MAT=Max Temp 
     MIT=Min Temp
-    LA = GPS latitude ( we can use the EXIF label, but or my Work I'll apped it into comments EXIF label)
-    LO = GPS longitude ( we can use the EXIF label,but or my Work I'll apped it into comments EXIF label )
+    LA = GPS latitude ( we can use the EXIF label, but in my Work I'll apped it into comments EXIF label)
+    LO = GPS longitude ( we can use the EXIF label,but in my Work I'll apped it into comments EXIF label )
  4.1) A second code of this phase was designed to make it more efficient 
- 
+ 5) Ok this the core process and the main problem
+       How I can analise the entire area of the crop where the Image1.jpg, Image2.jpg, Image3.jpg Image4.jpg Image5.jpg, Image6.jpg area single image (that represent the  180 angle of my landscape )  of the crop, each image covers 15 grades of vision.
+       We are assuming all the imagens where taken with the same scale and using thermal raimbow scale.
+       
  
  Whow reproduce all the steps
  Ofcourse I can't give you all the 500 themal PIC's, but I'll give you the 500 files with the digit reporesentation 
