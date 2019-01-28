@@ -1,4 +1,4 @@
-# IDI3
+# IDI3 - ITESO - PhD  Engineering Sciences
 FLIR Thermal PIC Metadata
 Marco Antonio Ramirez Martagon
 PhD in Engineering Sciences
