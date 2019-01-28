@@ -17,6 +17,7 @@ Note :
   Python code not obtimised, this process was designed  to teach the entire pricess from collec the pictures, group, use the right model and train the model  on class room.
   
 Solution :
+
 It was divided into 6 parts
 1) Obtain 500 FLIR imagens and extract the digits in pure Black and White color, the image size is 9 pixels cols by 14 pixels rows, save each image with a random label from 1 to 1,000,000 in BPM format
 2) Manual review of each image to label it according the digit contained i.e 1-XXXX.BMP for all the PICs (images) with the digit 1, and use minus-XXXXXX.BMP for all the imagens with a minus sign, use dot-XXXXX.BMP for all the images with dot sign.
@@ -46,7 +47,7 @@ It was divided into 6 parts
  Run Part2, Part3 and Part4
  
  
- Files\n
+ Files
  
      ./digits
             contain all the pictures 9x14 pixels, labeled manually with the class, 3815 files in BPM format in black and white color
@@ -66,6 +67,7 @@ It was divided into 6 parts
    
    
    Ref:
+   
    [1]Geron, A."Hands-On Machine Learning with Scikit-Learn & TensorFlow",O'REALLY, 2017 USA
    [2]EXIF,"Exchangeable Image File Format", online : https://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/EXIF.html
    [3]Anaconda IDE. online: https://www.anaconda.com/
