@@ -66,12 +66,16 @@ It was divided into 6 parts
             
    
    
-   Ref:\n
+   Ref:
    
    [1]Geron, A."Hands-On Machine Learning with Scikit-Learn & TensorFlow",O'REALLY, 2017 USA
+   
    [2]EXIF,"Exchangeable Image File Format", online : https://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/EXIF.html
+   
    [3]Anaconda IDE. online: https://www.anaconda.com/
+   
    [4]Anaconda Scki-learn. online : https://anaconda.org/anaconda/scikit-learn
+   
    
    
 
