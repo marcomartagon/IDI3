@@ -46,7 +46,8 @@ It was divided into 6 parts
  Run Part2, Part3 and Part4
  
  
- Files 
+ Files\n
+ 
      ./digits
             contain all the pictures 9x14 pixels, labeled manually with the class, 3815 files in BPM format in black and white color
      ./unique_digits
